@@ -3,7 +3,7 @@ import express from "express";
 import userRoutes from "./userRoutes.js";
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.use([express.urlencoded({ extended: true }), express.json()]);
 
